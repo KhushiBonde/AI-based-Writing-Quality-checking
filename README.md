@@ -1,4 +1,4 @@
-# ✍️ AI Based Writing Quality Checking Technology
+ AI Based Writing Quality Checking Technology
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![NLP](https://img.shields.io/badge/NLP-NLTK%20%7C%20spaCy-yellow.svg)
@@ -8,23 +8,23 @@
 
 ---
 
-## 👤 Author(s)
+ Profile
 
 ```
-Author(s): [Your Name]
-Affiliation: [Your University / Organization]
-Date: [Month Year]
+Author(s): [Khushi Bonde]
+Affiliation: [Suryodaya College Of Engineering And Technology]
+
 ```
 
 ---
 
-## 📄 Abstract
+Abstract
 
 This project presents an AI-powered Writing Quality Checker that evaluates and scores written text using Natural Language Processing (NLP) techniques. The system analyzes essays, articles, or paragraphs across four key dimensions: grammar accuracy, readability, vocabulary richness, and sentence structure diversity. Each dimension is independently scored and combined into a final Writing Quality Score (0–100). The system uses NLTK for tokenization and text analysis, TextBlob for grammar and sentiment evaluation, LanguageTool for grammar error detection, and the Flesch-Kincaid formula for readability scoring. It also generates actionable improvement suggestions. Built with Python and open-source NLP libraries, this beginner-friendly project demonstrates practical application of natural language processing in the education and content creation domain.
 
 ---
 
-## 1. 📖 Introduction
+ 1.  Introduction
 
 Writing quality is a fundamental skill in academics and professional life. However, evaluating writing quality manually is subjective, time-consuming, and inconsistent across evaluators. Students often lack immediate feedback on their writing errors, which hampers improvement.
 
@@ -39,7 +39,7 @@ Automated Writing Evaluation (AWE) systems powered by NLP can provide instant, o
 
 ---
 
-## 2. 📚 Literature Review
+ 2. Literature Review
 
 - **Burstein et al. (2003)** developed "e-rater" — one of the first automated essay scoring systems using NLP, deployed by ETS for GRE scoring.
 - **Attali & Burstein (2006)** described e-rater v2 which analyzed organization, development, grammar, usage, mechanics, and style.
@@ -51,13 +51,13 @@ Existing AWE tools (Grammarly, Turnitin) are proprietary and expensive. This ope
 
 ---
 
-## 3. ⚙️ Methodology
+3.  Methodology
 
 Input text is tokenized into sentences and words using NLTK's punkt tokenizer. Grammar errors are detected using the LanguageTool Python wrapper, which identifies issues like subject-verb agreement, punctuation errors, and incorrect word usage. Readability is calculated using the Flesch Reading Ease formula: `206.835 - 1.015*(words/sentences) - 84.6*(syllables/words)`. Vocabulary richness is measured as the Type-Token Ratio (TTR) — unique words divided by total words. Sentence structure diversity is assessed by measuring the standard deviation of sentence lengths. Each metric is normalized to a 0–100 scale and weighted to produce the final quality score. Suggestions are generated based on identified weaknesses in each dimension.
 
 ---
 
-## 4. 💻 Implementation
+4.  Implementation
 
 **Programming Language:** Python 3.8+
 
@@ -111,7 +111,7 @@ python src/main.py --file dataset/sample_texts/good_essay.txt
 
 ---
 
-## 5. 📊 Results and Discussion
+5. Results and Discussion
 
 **Scoring Breakdown (Sample Essay — 250 words):**
 
@@ -130,16 +130,16 @@ python src/main.py --file dataset/sample_texts/good_essay.txt
 
 **Sample Suggestions Generated:**
 ```
-⚠️  3 grammar errors detected. Check subject-verb agreement.
-📖  Readability score: 61.2 (Standard). Suitable for 7th-8th grade readers.
-📝  Vocabulary richness: Good (TTR = 0.68). Try using more synonyms.
-📏  Sentence length is slightly uniform. Vary short and long sentences.
-✅  Overall Writing Quality Score: 77/100 (Good)
+  3 grammar errors detected. Check subject-verb agreement.
+  Readability score: 61.2 (Standard). Suitable for 7th-8th grade readers.
+  Vocabulary richness: Good (TTR = 0.68). Try using more synonyms.
+  Sentence length is slightly uniform. Vary short and long sentences.
+  Overall Writing Quality Score: 77/100 (Good)
 ```
 
 ---
 
-## 6. ⚠️ Limitations
+6.  Limitations
 
 - **LanguageTool** may generate false positives — especially for technical jargon, abbreviations, or domain-specific terms.
 - The system is **English-only** and does not support regional languages like Hindi, Marathi, or Tamil.
@@ -150,7 +150,7 @@ python src/main.py --file dataset/sample_texts/good_essay.txt
 
 ---
 
-## 7. 🚀 Future Scope
+ 7.  Future Scope
 
 - Integrate **BERT/GPT-based models** for deep semantic writing quality assessment
 - Add **multi-language support** (Hindi, Marathi) for Indian students
@@ -162,13 +162,13 @@ python src/main.py --file dataset/sample_texts/good_essay.txt
 
 ---
 
-## 8. ✅ Conclusion
+8. Conclusion
 
 This project successfully implements an AI-based Writing Quality Checker using NLP techniques. The system evaluates grammar, readability, vocabulary, and sentence structure to produce a comprehensive quality score with actionable suggestions. Tested on a variety of text samples, the system demonstrates strong correlation with human evaluation for grammar and readability dimensions. While deep semantic quality assessment remains a challenge, the current system provides valuable, instant feedback for students and writers. This project helps beginner AI/ML students gain hands-on experience with NLP pipelines, text preprocessing, and linguistic feature extraction.
 
 ---
 
-## 9. 📎 References
+9.  References
 
 ```
 [1] J. Burstein et al., "Automated Essay Scoring with e-rater v.2.0," 

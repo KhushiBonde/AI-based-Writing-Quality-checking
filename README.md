@@ -1,12 +1,3 @@
- AI Based Writing Quality Checking Technology
-
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![NLP](https://img.shields.io/badge/NLP-NLTK%20%7C%20spaCy-yellow.svg)
-![TextBlob](https://img.shields.io/badge/Tool-TextBlob-blue.svg)
-![Level](https://img.shields.io/badge/Level-Beginner-green.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
-
----
 
  Profile
 
